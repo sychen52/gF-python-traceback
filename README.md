@@ -4,8 +4,7 @@ This is a vim plugin that allow you to gF (jump to file with line number) based 
 
 Since python's traceback message looks something like: "filename", line xxx. Vim's buildin gF does not work. This plugin is to solve it.
 
-It is based on an [answer from stackoverflow](https://stackoverflow.com/questions/68428589/vim-gf-command-dont-capture-python-traceback-messages-line-number)
-
+It is based on [romainl's answer on stackoverflow](https://stackoverflow.com/a/68437027/16999134
 # Install
 ```vim
 Plug 'sychen52/gF-python-traceback'
