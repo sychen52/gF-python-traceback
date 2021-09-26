@@ -1,4 +1,4 @@
-function! PythongF()
+function! pythongF#gF()
     " are we in a terminal window?
     if get(get(getwininfo(win_getid()), 0, {}), 'terminal', 0)
     "if win_getid()->getwininfo()->get(0, {})->get('terminal', 0)
@@ -19,4 +19,3 @@ function! PythongF()
         normal! gF
     endif
 endfunction
-nnoremap gF <Cmd>call PythongF()<CR>
