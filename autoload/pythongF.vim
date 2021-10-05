@@ -8,11 +8,13 @@ function! pythongF#gF()
         " if we have one, do regular gF, which won't jump
         " to the desired line anyway because Vim can't parse
         " tracebacks properly
-        normal! gF
         if line
             " but we don't care because we can jump
             " to the found line on our own
+            normal! ^f"lgF
             execute line
+        else
+            normal! gF
         endif
     else
         " if we aren't, do regular gF
